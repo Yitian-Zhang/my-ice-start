@@ -1,16 +1,21 @@
 const headerMenuConfig = [];
 
+/**
+ * 菜单配置
+ */
 const asideMenuConfig = [
   {
     name: 'Home',
     path: '/',
     icon: 'chart-pie',
   },
+
   {
-    name: 'About',
-    path: '/about',
+    name: 'ReactStart', // react get start with blog
+    path: '/react-get-start',
     icon: 'chart-pie',
   },
+
   {
     name: '商家平台',
     icon: 'atm',
@@ -38,7 +43,7 @@ const asideMenuConfig = [
     icon: 'account',
     children: [
       {
-        path: '/waiter',
+        path: '/waiter',  // 这里的路径没有设置，怎么映射的？
         name: '小二首页',
       },
       {
@@ -54,6 +59,11 @@ const asideMenuConfig = [
         name: '小二 404',
       },
     ],
+  },
+  {
+    name: 'About',
+    path: '/about',
+    icon: 'chart-pie',
   },
 ];
 
