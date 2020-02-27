@@ -14,6 +14,18 @@ const About = () => {
           <td>v1.0</td>
           <td>项目环境初始化，可以根据该环境进行自己的学习</td>
         </tr>
+        <tr>
+          <td>v2.0</td>
+          <td>根据该Blog（）完成React-Get-Start学习内容</td>
+        </tr>
+        <tr>
+          <td>v3.0</td>
+          <td>根据React Start（官网文档）完成Tic-Tac-Toe游戏</td>
+        </tr>
+        <tr>
+          <td>v3.1</td>
+          <td>在之前Tic-Tac-Toe游戏的基础上增加History历史回溯功能</td>
+        </tr>
       </table>
     </div>
   );

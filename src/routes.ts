@@ -1,11 +1,16 @@
 import Home from '@/pages/Home';
 import About from '@/pages/About';
 import ReactStart from '@/pages/ReactStart';
+import TicGame from '@/components/TicGame';
 
 /**
  * 项目路由配置
  */
 const routes = [
+  {
+    path: '/tic-tac-toe',
+    component: TicGame,
+  },
   {
     path: '/react-get-start',
     component: ReactStart,

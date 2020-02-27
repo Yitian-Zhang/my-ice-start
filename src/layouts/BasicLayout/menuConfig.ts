@@ -17,6 +17,12 @@ const asideMenuConfig = [
   },
 
   {
+    name: 'TicTacToe',
+    path: '/tic-tac-toe',
+    icon: 'chart-pie',
+  },
+
+  {
     name: '商家平台',
     icon: 'atm',
     children: [

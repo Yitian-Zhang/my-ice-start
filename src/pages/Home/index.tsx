@@ -17,6 +17,10 @@ const Home = () => {
           <td><Link to="/seller">Seller Link</Link></td>
         </tr>
         <tr>
+          <td>Tic-Tac-Toe Game</td>
+          <td><Link to="/tic-tac-toe">Tic-Tac-Toe</Link></td>
+        </tr>
+        <tr>
           <td>About Page</td>
           <td><Link to="/about">About</Link></td>
         </tr>
