@@ -21,9 +21,14 @@ const Home = () => {
           <td><Link to="/tic-tac-toe">Tic-Tac-Toe</Link></td>
         </tr>
         <tr>
+          <td>Clock App</td>
+          <td><Link to="/clock-app">Clock From Docs</Link></td>
+        </tr>
+        <tr>
           <td>About Page</td>
           <td><Link to="/about">About</Link></td>
         </tr>
+
       </table>
     </div>
   );

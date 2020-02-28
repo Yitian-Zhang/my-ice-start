@@ -2,11 +2,16 @@ import Home from '@/pages/Home';
 import About from '@/pages/About';
 import ReactStart from '@/pages/ReactStart';
 import TicGame from '@/components/TicGame';
+import ClockApp from '@/pages/ClockApp';
 
 /**
  * 项目路由配置
  */
 const routes = [
+  {
+    path: '/clock-app',
+    component: ClockApp,
+  },
   {
     path: '/tic-tac-toe',
     component: TicGame,
