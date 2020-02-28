@@ -12,7 +12,6 @@ const ReactStart = () => {
     <div>
       <h1>React Get Start with Blog</h1>
       <p>https://www.taniarascia.com/getting-started-with-react/</p>
-
       {/*该项目的单页面*/}
       <StartApp />
     </div>

@@ -23,7 +23,6 @@ const routes = [
     path: '/', // 如果使用/，则需要放在最后面
     component: Home,
   }
-
 ];
 
 export default routes;
