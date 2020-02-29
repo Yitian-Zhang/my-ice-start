@@ -22,7 +22,7 @@ class StartForm extends Component {
     })
   };
 
-  // 新数据加入时间处理
+  // 新数据加入事件处理
   onSubmitForm = (event) => {
     event.preventDefault();
 

@@ -9,13 +9,11 @@ const asideMenuConfig = [
     path: '/',
     icon: 'chart-pie',
   },
-
   {
     name: 'ReactStart', // react get start with blog
     path: '/react-get-start',
     icon: 'chart-pie',
   },
-
   {
     name: 'TicTacToe',
     path: '/tic-tac-toe',
@@ -27,7 +25,11 @@ const asideMenuConfig = [
     path: '/clock-app',
     icon: 'chart-pie',
   },
-
+  {
+    name: 'CommonApp',
+    path: '/common-app',
+    icon: 'chart-pie',
+  },
   {
     name: '商家平台',
     icon: 'atm',

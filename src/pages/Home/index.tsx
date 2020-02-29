@@ -9,23 +9,27 @@ const Home = () => {
 
       <table>
         <tr>
-          <td>React Get Start Page</td>
+          <td>React Get-Start (React Tutorial)</td>
           <td><Link to="/react-get-start">React Get-Start</Link></td>
         </tr>
         <tr>
-          <td>Seller Page</td>
+          <td>Seller Page (Default Page)</td>
           <td><Link to="/seller">Seller Link</Link></td>
         </tr>
         <tr>
-          <td>Tic-Tac-Toe Game</td>
+          <td>Tic-Tac-Toe Game (React in Practice)</td>
           <td><Link to="/tic-tac-toe">Tic-Tac-Toe</Link></td>
         </tr>
         <tr>
-          <td>Clock App</td>
+          <td>Clock App (Component props, state & Lifecycle)</td>
           <td><Link to="/clock-app">Clock From Docs</Link></td>
         </tr>
         <tr>
-          <td>About Page</td>
+          <td>Common App (Conditional Component & List & Form)</td>
+          <td><Link to="/common-app">Common Use from Docs</Link></td>
+        </tr>
+        <tr>
+          <td>About Page (Project Version)</td>
           <td><Link to="/about">About</Link></td>
         </tr>
 
