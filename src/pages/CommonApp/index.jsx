@@ -4,6 +4,8 @@ import LoginControl from '../../components/LoginControl';
 import NumberList from "../../components/NumberList";
 import UserForm from '../../components/UserForm';
 import DocBlog from "../../components/DocBlog";
+import TemCalculator from "../../components/TemCalculator";
+import ProductFilterTable from '../../components/ProductFilterTable';
 
 class CommonApp extends Component {
   render() {
@@ -28,6 +30,11 @@ class CommonApp extends Component {
         <h1>React表单</h1>
         <UserForm />
         <hr/>
+        <h1>State提升</h1>
+        <TemCalculator/>
+        <hr/>
+        {/*<h1>React Practice</h1>*/}
+        {/*<ProductFilterTable />*/}
       </div>
     );
   }

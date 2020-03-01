@@ -38,7 +38,7 @@ class StartApp extends Component {
     })
   };
 
-  // 提交时间处理
+  // 提交事件处理
   handleSubmit = character => {
     this.setState({
       characters: [...this.state.characters, character]
