@@ -26,6 +26,14 @@ const About = () => {
           <td>v3.1</td>
           <td>在之前Tic-Tac-Toe游戏的基础上增加History历史回溯功能</td>
         </tr>
+        <tr>
+          <td>v4.0</td>
+          <td>根据React文档内容，增加React核心功能使用，包括：组件及props，state及生命周期，列表，Form，state状态提升内容</td>
+        </tr>
+        <tr>
+          <td>v4.1</td>
+          <td>根据React文档内容（React哲学），实现该文档中提供的实践实例</td>
+        </tr>
       </table>
     </div>
   );

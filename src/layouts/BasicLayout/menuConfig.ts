@@ -31,6 +31,11 @@ const asideMenuConfig = [
     icon: 'chart-pie',
   },
   {
+    name: 'ReactPractice',
+    path: '/react-practice',
+    icon: 'chart-pie',
+  },
+  {
     name: '商家平台',
     icon: 'atm',
     children: [

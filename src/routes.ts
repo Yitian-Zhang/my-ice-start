@@ -4,11 +4,16 @@ import ReactStart from '@/pages/ReactStart';
 import TicGame from '@/components/TicGame';
 import ClockApp from '@/pages/ClockApp';
 import CommonApp from '@/pages/CommonApp';
+import ProductFilterTable from '@/components/ProductFilterTable';
 
 /**
  * 项目路由配置
  */
 const routes = [
+  {
+    path: '/react-practice',
+    component: ProductFilterTable,
+  },
   {
     path: '/common-app',
     component: CommonApp,

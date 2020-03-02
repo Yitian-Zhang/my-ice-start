@@ -95,20 +95,23 @@ class TicGame extends Component {
     }
 
     return (
-      <div className="game">
-        <div className="game-board">
-          {/* 为了实现history的功能，将Board中的状态提升到了Game组件中，然后将更新后的状态使用props传递给Board组件，此时Board为受控组件 */}
-          <TicBoard
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}/>
+      <React.Fragment>
+        <h1>Tic-Tac-Toe Game using React</h1>
+        <div className="game">
+          <div className="game-board">
+            {/* 为了实现history的功能，将Board中的状态提升到了Game组件中，然后将更新后的状态使用props传递给Board组件，此时Board为受控组件 */}
+            <TicBoard
+              squares={current.squares}
+              onClick={(i) => this.handleClick(i)}/>
+          </div>
+          <div className="game-info">
+            {/* status显示当前步骤的改谁下，并显示最后的winner */}
+            <div className="status">{status}</div>
+            {/* 用于记录下棋过程中所有的步骤过程，moves是一个button的数组 */}
+            <ol className="moves">{moves}</ol>
+          </div>
         </div>
-        <div className="game-info">
-          {/* status显示当前步骤的改谁下，并显示最后的winner */}
-          <div className="status">{status}</div>
-          {/* 用于记录下棋过程中所有的步骤过程，moves是一个button的数组 */}
-          <ol className="moves">{moves}</ol>
-        </div>
-      </div>
+      </React.Fragment>
     );
   }
 

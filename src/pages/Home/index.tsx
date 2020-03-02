@@ -25,8 +25,12 @@ const Home = () => {
           <td><Link to="/clock-app">Clock From Docs</Link></td>
         </tr>
         <tr>
-          <td>Common App (Conditional Component & List & Form)</td>
+          <td>Common App (Conditional Component & List & Form & State Promote)</td>
           <td><Link to="/common-app">Common Use from Docs</Link></td>
+        </tr>
+        <tr>
+          <td>React Practice (Product Project from React Philosophy Docs)</td>
+          <td><Link to="/react-practice">Product Project in Docs</Link></td>
         </tr>
         <tr>
           <td>About Page (Project Version)</td>

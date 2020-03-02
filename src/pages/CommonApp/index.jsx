@@ -33,8 +33,6 @@ class CommonApp extends Component {
         <h1>State提升</h1>
         <TemCalculator/>
         <hr/>
-        {/*<h1>React Practice</h1>*/}
-        {/*<ProductFilterTable />*/}
       </div>
     );
   }
