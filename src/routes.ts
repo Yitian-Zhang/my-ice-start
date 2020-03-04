@@ -5,11 +5,26 @@ import TicGame from '@/components/TicGame';
 import ClockApp from '@/pages/ClockApp';
 import CommonApp from '@/pages/CommonApp';
 import ProductFilterTable from '@/components/ProductFilterTable';
+import UserDetailForm from '@/components/UserDetailForm';
+import UserListTable from '@/components/UserListTable';
+import UserCreateForm from '@/components/UserCreateForm';
 
 /**
  * 项目路由配置
  */
 const routes = [
+  {
+    path: '/user/create',
+    component: UserCreateForm,
+  },
+  {
+    path: '/user/list',
+    component: UserListTable,
+  },
+  {
+    path: '/user/detail',
+    component: UserDetailForm,
+  },
   {
     path: '/react-practice',
     component: ProductFilterTable,

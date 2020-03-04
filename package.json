@@ -8,11 +8,14 @@
     "@icedesign/container": "^1.x",
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
+    "axios": "^0.19.2",
     "classnames": "^2.2.5",
+    "ice": "^3.7.3",
     "moment": "^2.24.0",
     "prop-types": "^15.5.8",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-router-dom": "latest"
   },
   "devDependencies": {
     "@ice/spec": "^1.0.1",

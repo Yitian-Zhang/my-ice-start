@@ -36,6 +36,24 @@ const asideMenuConfig = [
     icon: 'chart-pie',
   },
   {
+    name: 'UserConfig',
+    icon: 'chart-pie',
+    children: [
+      {
+        path: '/user/create',
+        name: 'CreateUser',
+      },
+      {
+        path: '/user/list',
+        name: 'UserList',
+      },
+      // {
+      //   path: '/user/detail',
+      //   name: 'UserDetail',
+      // },
+    ]
+  },
+  {
     name: '商家平台',
     icon: 'atm',
     children: [
