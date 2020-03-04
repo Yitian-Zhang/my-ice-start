@@ -34,6 +34,10 @@ const About = () => {
           <td>v4.1</td>
           <td>根据React文档内容（React哲学），实现该文档中提供的实践实例</td>
         </tr>
+        <tr>
+          <td>v5.0</td>
+          <td>React使用axios实现Spring Boot的前后端通信，并完成User Config的功能。对应的springboot-learning项目版本为v2.0</td>
+        </tr>
       </table>
     </div>
   );
