@@ -17,7 +17,7 @@ class UserCreateForm extends Component {
     this.state = {
       username: '',
       sex: 'MALE',
-      note: ''
+      note: '',
     };
   }
 
@@ -31,11 +31,54 @@ class UserCreateForm extends Component {
 
   // 创建用户信息
   handleSubmit = (event) => {
-    this.submitUser();
+    // 已解决CSRF 403问题，但SpringBoot暂未启用CSRF
+    // this.submitUserWithCsrf();
+
+    this.submitUserWithoutCsrf();
   };
 
-  // post请求提交更新后的user信息
-  submitUser() {
+  // 开启CSRF时post请求提交更新后的user信息
+  submitUserWithCsrf() {
+    const {username, sex, note} = this.state;
+    const { history } = this.props;
+    console.log(username + ", " + sex + ", " + note);
+
+    if (username === '' || username === null) {
+      alert("UserName不能为空");
+      return;
+    }
+    // 输出cookies的值
+    console.log("cookies:" + document.cookie); // 如果不在服务端和客户端加入withCredentials设置，则这里得不到cookie的值
+    axios({
+      method: 'post',
+      url: 'http://localhost:8080/react-user/create',
+      headers: {
+        // 'X-XSRF-TOKEN': CSRF_TOKEN,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      data: {
+        userName: username,
+        sex: sex,
+        note: note
+      },
+      withCredentials: true, // 开启跨域cookie验证（同时需要Spring Boot服务端也开启对应的设置）
+      // xsrfCookieName: 'XSRF-TOKEN', // 这里实际上是默认的设置，所以可以不设置
+    }).then(function (response) {
+      console.log(response);
+        alert(response.data.msgInfo);
+
+        // 添加完成后跳转list页面
+        history.push({
+          pathname: '/user/list',
+        });
+    }).catch(function (error) {
+      console.log(error);
+    });
+  };
+
+  // Spring Boot服务端关闭CSRF时的POST请求方法
+  submitUserWithoutCsrf() {
     const {username, sex, note} = this.state;
     const { history } = this.props;
     console.log(username + ", " + sex + ", " + note);
@@ -57,20 +100,6 @@ class UserCreateForm extends Component {
     }).catch(function (error) {
         console.log(error);
     });
-
-    // // Send a POST request with another method
-    // axios({
-    //   method: 'post',
-    //   url: '/user/12345',
-    //   data: {
-    //     firstName: 'Fred',
-    //     lastName: 'Flintstone'
-    //   }
-    // }).then(function (response) {
-    //   console.log(response);
-    // }).catch(function (error) {
-    //   console.log(error);
-    // });
   };
 
   render() {
