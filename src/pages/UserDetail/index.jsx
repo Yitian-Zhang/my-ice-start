@@ -6,8 +6,6 @@ import axios from 'axios';
 
 class UserDetail extends Component {
 
-
-
   render() {
     const {id, username, sex, note} = this.state;
 

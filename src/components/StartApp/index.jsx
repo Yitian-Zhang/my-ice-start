@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import ReactDom from 'react-dom';
+import React, {Component} from 'react'; // 使用React必须引入的内容
+import ReactDom from 'react-dom';       // 使用ReactDOM必须引入的内容
 import StartTable from '../StartTable';
 import './index.css';
 import StartForm from "../StartForm";

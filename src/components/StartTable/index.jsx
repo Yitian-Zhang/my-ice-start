@@ -21,7 +21,7 @@ const TableBody = (props) => {
         <td>{row.name}</td>
         <td>{row.job}</td>
         <td>
-          <button onClick={()=> props.removeCharacter(index)}>Delete</button>
+          <button onClick={() => props.removeCharacter(index)}>Delete</button>
         </td>
       </tr>
     )
@@ -32,6 +32,7 @@ const TableBody = (props) => {
 class StartTable extends Component {
 
   render() {
+    // 从父组件传入的props获取属性，根据属性的名称进行对应，属性可以是组件、方法等内容
     const {characterData, removeCharacter} = this.props;
 
     return (
